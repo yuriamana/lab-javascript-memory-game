@@ -1,3 +1,5 @@
+import { MemoryGame } from './memory.js'
+
 const cards = [
   { name: 'aquaman', img: 'aquaman.jpg' },
   { name: 'batman', img: 'batman.jpg' },
@@ -27,7 +29,7 @@ const cards = [
 
 const memoryGame = new MemoryGame(cards);
 
-window.addEventListener('load', (event) => {
+//window.addEventListener('load', (event) => {
   let html = '';
   memoryGame.cards.forEach((pic) => {
     html += `
@@ -48,4 +50,4 @@ window.addEventListener('load', (event) => {
       console.log(`Card clicked: ${card}`);
     });
   });
-});
+//});
